@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B5E8D9"
+    android:orientation="vertical"
+    tools:context=".StartScreen"
+   >
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:fontFamily="@font/f"
+    android:gravity="center"
+    android:padding="10dp"
+    android:text="TIC TAC TOE"
+    android:textColor="#395F7E"
+    android:textSize="40sp"
+
+ />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+    <Button
+        android:id="@+id/single"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/back"
+        android:fontFamily="@font/aldhabi"
+        android:text="لاعب واحد"
+        android:textColor="#395F7E"
+        android:textSize="28sp"
+        android:textStyle="bold"/>
+    <Button
+        android:id="@+id/two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/back"
+        android:fontFamily="@font/aldhabi"
+        android:text="لاعبان"
+        android:textColor="#395F7E"
+        android:textSize="28sp"
+        android:textStyle="bold"/>
+</LinearLayout>
+</LinearLayout>

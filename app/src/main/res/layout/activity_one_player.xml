@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDFCFC"
+    android:orientation="vertical"
+    tools:context=".TwoPlayer">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/text_view_p1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:freezesText="true"
+            android:text="اللاعب :"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/p1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/text_view_p1"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="-22dp"
+            android:layout_marginTop="1dp"
+            android:freezesText="true"
+            android:text="0"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/text_view_p2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_p1"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:freezesText="true"
+            android:text="اندرويد :"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/p2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/p1"
+            android:layout_alignLeft="@id/text_view_p2"
+            android:layout_marginLeft="-16dp"
+            android:layout_marginTop="-5dp"
+            android:freezesText="true"
+            android:text="0"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/button_reset"
+            android:layout_width="150dp"
+            android:layout_height="39dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="33dp"
+            android:layout_marginRight="33dp"
+            android:background="@drawable/buttonshape"
+            android:onClick="onClick"
+            android:text="البدء من جديد" />
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000" />
+
+    <com.example.tictactoe.BoardView
+        android:id="@+id/board"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:freezesText="true" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000" />
+
+</LinearLayout>
